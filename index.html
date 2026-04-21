@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>prouducthub · DIY Electronics & Parts</title>
+  <!-- Font Awesome for icons (free version) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky semantic header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logo area -->
+      <div class="logo">
+        <a href="/" aria-label="ComponentHub Home">
+          <i class="fas fa-microchip" aria-hidden="true"></i>
+          <span>ComponentHub</span>
+        </a>
+      </div>
+
+      <!-- Main navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Shop</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart icon with badge -->
+      <div class="cart-icon-wrapper">
+        <button class="cart-toggle" id="cartToggle" aria-label="Shopping cart">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+
+    <!-- Hero section with CTA -->
+    <section class="hero" aria-label="Hero call to action">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="accent-text">Build Smarter.</span> <br>
+            Premium Components for Makers.
+          </h1>
+          <p class="hero-subtitle">
+            Semiconductors, batteries, LED bulbs, and Raspberry Pi boards — 
+            all in one place. Start your next project today.
+          </p>
+          <a href="#" class="cta-button">
+            Explore Shop <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="hero-visual">
+          <!-- Techy abstract placeholder -->
+          <div class="hero-graphic">
+            <i class="fas fa-cpu"></i>
+            <i class="fas fa-bolt"></i>
+            <i class="fas fa-lightbulb"></i>
+            <i class="fab fa-raspberry-pi"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products" aria-labelledby="featured-heading">
+      <div class="container">
+        <h2 id="featured-heading" class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          
+          <!-- Product Card 1: Semiconductor (IC Chip) -->
+          <article class="product-card">
+            <div class="product-image" aria-label="Semiconductor IC Chip placeholder">
+              <i class="fas fa-memory" aria-hidden="true"></i>
+              <span class="image-label">IC Chip</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ATmega328P Microcontroller</h3>
+              <p class="product-description">8-bit AVR, 32KB Flash – perfect for embedded projects.</p>
+              <p class="product-price">$4.99</p>
+              <button class="add-to-cart-btn" data-id="sem-001" data-name="ATmega328P IC" data-price="4.99">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+          
+          <!-- Product Card 2: Rechargeable Battery Pack -->
+          <article class="product-card">
+            <div class="product-image" aria-label="Rechargeable battery pack placeholder">
+              <i class="fas fa-battery-full" aria-hidden="true"></i>
+              <span class="image-label">Li-ion Pack</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Li-ion Battery Pack 5000mAh</h3>
+              <p class="product-description">3.7V rechargeable, built-in protection circuit.</p>
+              <p class="product-price">$12.99</p>
+              <button class="add-to-cart-btn" data-id="bat-002" data-name="Li-ion 5000mAh Pack" data-price="12.99">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+          
+          <!-- Product Card 3: LED Light Bulb -->
+          <article class="product-card">
+            <div class="product-image" aria-label="LED light bulb placeholder">
+              <i class="fas fa-lightbulb" aria-hidden="true"></i>
+              <span class="image-label">LED Bulb</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Smart LED Bulb 9W (RGB)</h3>
+              <p class="product-description">Wi-Fi enabled, dimmable, 16 million colors.</p>
+              <p class="product-price">$7.49</p>
+              <button class="add-to-cart-btn" data-id="led-003" data-name="Smart LED Bulb 9W" data-price="7.49">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+          
+          <!-- Product Card 4: Raspberry Pi 5 -->
+          <article class="product-card">
+            <div class="product-image" aria-label="Raspberry Pi 5 board placeholder">
+              <i class="fab fa-raspberry-pi" aria-hidden="true"></i>
+              <span class="image-label">RPi 5</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Raspberry Pi 5 (4GB RAM)</h3>
+              <p class="product-description">Quad-core ARM Cortex-A76, PCIe 2.0, dual 4K output.</p>
+              <p class="product-price">$59.99</p>
+              <button class="add-to-cart-btn" data-id="rpi-004" data-name="Raspberry Pi 5 4GB" data-price="59.99">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer / Modal (hidden by default) -->
+  <div id="cartDrawer" class="cart-drawer hidden" aria-hidden="true">
+    <div class="cart-drawer-overlay"></div>
+    <div class="cart-drawer-content">
+      <div class="cart-header">
+        <h3>Your Cart <i class="fas fa-shopping-bag" aria-hidden="true"></i></h3>
+        <button class="close-cart" id="closeCartBtn" aria-label="Close cart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items-container" id="cartItemsList">
+        <!-- Cart items will be injected by JavaScript -->
+        <p class="empty-cart-message">Your cart is empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotalPrice">$0.00</span>
+        </div>
+        <button class="checkout-btn" disabled>Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simple footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 ComponentHub · All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript (functionality in step 3) -->
+  <script src="script.js"></script>
+</body>
+</html>
